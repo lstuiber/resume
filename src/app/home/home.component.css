@@ -4,12 +4,72 @@ nav {
     /* This aligns items to the end line on main-axis */
     justify-content: flex-end;
   }
+  .brandname {
+    padding-left: 5px;
+  }
+
+  .panels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0 100px 0;
+    background: #1E1A34;
+  }
+  
+  .panel-item {
+    opacity: 0;
+    padding: 20px;
+    background: #F59B14;
+    font-size: 50px;
+    border-radius: 15px 50px;
+    color: #1E1A34;
+  }
+#mail, .link {
+  text-decoration: none;
+}
+
+  
+  #work {
+    animation: 3s ease 3s normal forwards 1 fadein;
+  }
+  #ed {
+    animation: 3s ease 3.5s normal forwards 1 fadein;
+  }
+  #proj {
+    animation: 3s ease 4s normal forwards 1 fadein;
+  }
+  #contact {
+    animation: 3s ease 4.5s normal forwards 1 fadein;
+  }
+  .container-top {
+    display: flex;
+    flex-direction: row;
+    background-color: #A9AEC0;
+    justify-content: center;
+    align-items: center;
+  }
 
   /* Medium screens */
 @media all and (max-width: 800px) {
     .navigation {
       /* When on medium sized screens, we center it by evenly distributing empty space around items */
       justify-content: space-around;
+    }
+    .panels {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .panel-item {
+      margin-bottom: 10px;
+      padding: 0;
+    }
+    .container-top {
+      flex-direction: column;
+    }
+    .header2 {
+      padding-bottom: 20px;
     }
   }
   
@@ -19,11 +79,116 @@ nav {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
     }
+    .panel-item {
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+
+    }
+    .container-top {
+      flex-direction: column;
+    }
   }
 
-  #photoid {
-      margin-right: 10px;
-  }
-  #about {
-    background-color: #586480;
+.header {
+  text-align: center;
+}
+.pic {
+  animation: 1s ease 0s normal forwards 1 fadein;
+}
+#firstHeader {
+  opacity: 0;
+  padding: 40px 0;
+  font-size: 3.5em;
+  animation: 2s ease 1s normal forwards 1 fadein;
+  color: white;
+}
+.about {
+  opacity: 0;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.6em;
+  color: white;
+  border-radius: 20px;
+  animation: 2s ease 2s normal forwards 1 fadein;
+
+}
+@keyframes fadein {
+  0% { opacity: 0; }
+  66% { opacity: 0;}
+  100% { opacity: 1; }
+}
+
+#about {
+  background-color: #A9AEC0;
+}
+.abouttext {
+  text-align: justify;
+}
+#abouttext {
+  padding-bottom: 50px;
+}
+#mainpic, #mepic {
+  margin: 50px 50px 50px 0;
+}
+#resume {
+  background-color: #F59B14;
+  border: none;
+  color: #1E1A34;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.header2 {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 20px;
+  animation-delay: 5s;
+  animation: 2s ease 0s normal forwards 1 fadein;
+ 
+}
+.container-about {
+
+  background-color: #1E1A34;
+  padding-bottom: 70px;
+}
+
+.text2 {
+  background-color: #1E1A34;
+  padding-bottom: 50px;
+}
+.aboutme {
+  background-color: #1E1A34;
+}
+#mainpic {
+  display: none;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: white;
+  flex-wrap: wrap;
+}
+.linkedin {
+  font-size:48px;
+  color:#4875B4;
+}
+.footer-item {
+  margin: 50px 20px -50px 20px;
+}
+.mail {
+  color: #4875B4;
+}
+.name {
+  font-family: 'Great Vibes', cursive;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
 }

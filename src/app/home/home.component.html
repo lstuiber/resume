@@ -1,4 +1,9 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+</style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
 <nav class="navbar navbar-dark bg-dark navbar-expand-md">
   <div class="container">
       
@@ -13,20 +18,51 @@
       <a class="nav-item nav-link active" href="">Home</a>
       <a class="nav-item nav-link" href="#">Work Experience</a>
       <a class="nav-item nav-link" href="#">Education</a>
-      <a class="nav-item nav-link" href="#">Projects</a>
+      <a class="nav-item nav-link" href="#">Portfolio</a>
       <a class="nav-item nav-link" href="#">Contact</a>
-    </div><!-- navbar -->
+      <a  href="/assets/files/Resume.docx" download><button type="button" id="resume" class="btn"> Resume </button></a>
+        </div><!-- navbar -->
 </div><!-- collapse -->
   </div><!-- container -->
 </nav><!-- nav -->
 <div id="about" class="text-light">
-<div class="container">
-  <img src="/assets/images/pcpic.jpg" class="image-fluid rounded-circle" height=200 width=200 alt="computer picture">
-  <button class="btn"><i class="fa fa-download"></i> Download </button>
+<div class="container-top">
+<img id="mainpic" (load)="fade('mainpic')"  src="/assets/images/website.jpg" class="image-fluid rounded-circle top-content" height=200 width=200 alt="computer picture">
+  <div id="firstHeader" class="header top-content">About this website</div>
 
-  <div class="header">About this website</div>
-  <div class="about">This website is meant to help improve my web development skills and to help keep track of any projects I have done. 
-                     This is the first solo project of mine. I will also be trying to keep track of the progress of this website as it is developed to show
-                     the thought process and issues behind the whole process.</div>
+ 
 </div>
+    <div class="text">
+ 
+  <div id="abouttext" class="about abouttext">This website is meant to help improve my web development skills, help keep track of any projects I have done, and showcase additional information about me beyond my resume. 
+                     This is the first solo project of mine. I will also be trying to keep track of the progress of this website as it is developed to show
+                     the thought process and issues behind the whole process.
+  </div>
+</div>
+<div class="container-top aboutme">
+    <img id="mepic"  src="/assets/images/website.jpg" class="image-fluid rounded-circle top-content" height=200 width=200 alt="computer picture">
+<div class="header2">About Me</div>
+</div>
+<div class="text2">
+  
+  <div class="about abouttext ">My name is Lucas Stuiber and I am striving to become a Web Developer.
+    I am in my last year of school and will be graduating from UW-Whitewater 
+    in May 2019. Overall I have a laid back personality and within the Myers-Briggs personality
+    traits, I identify as ISFP. I am a quick learner as I've always quickly excelled
+     at sports and while working at various jobs.
+  </div>
+</div>
+</div>
+<div class="panels">
+  <a class="link" href=""> <div class="panel-item" id="work">Work</div></a>
+  <a class="link" href=""> <div class="panel-item" id="ed">Education</div></a>
+  <a class="link" href=""> <div class="panel-item" id="proj">Projects</div></a>
+  <a class="link" href="">  <div class="panel-item" id="contact">Contact</div></a>
+</div>
+<div class="footer">
+  <div class="footer-item">
+    <a id="linkedin" href="https://www.linkedin.com/in/lucas-stuiber-29a039114" target="_blank"> <i class="fa fa-linkedin-square linkedin"></i></a></div>
+    <div class="footer-item">
+    <a id="mail" href = "mailto: lucasstuiber@gmail.com"><i class="fa fa-envelope mail" aria-hidden="true" style="font-size:48px"></i></a></div>
+    <p class="name footer-item">Lucas Stuiber</p>
 </div>
